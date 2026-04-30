@@ -1,0 +1,3 @@
+[submodule "lcrt-etf"]
+	path = lcrt-etf
+	url = https://github.com/tomBoddaert/lcrt-etf.git

@@ -1,0 +1,11 @@
+--- src/applications/model/onoff-application.cc	2026-04-29 18:37:04.624777638 +0100
++++ src/applications/model/onoff-application.cc	2026-04-29 18:37:26.487659854 +0100
+@@ -271,7 +271,7 @@
+     }
+ 
+     int actual = m_socket->Send(packet);
+-    if ((unsigned)actual == m_pktSize)
++    if ((unsigned)actual >= m_pktSize)
+     {
+         m_txTrace(packet);
+         m_totBytes += m_pktSize;
